@@ -1,0 +1,131 @@
+
+
+/* HOME =================== */
+#home {
+    overflow: hidden;
+    min-height: 100vh;
+
+
+    position: relative;
+    background: var(--primary-color);
+}
+
+#home .content {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+    gap: 5rem;
+}
+
+#home .content .text img {
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+#home .content .text {
+    margin-top: var(--nav-height);
+}
+
+#home .content h1 {
+    font-size: 4rem;
+    color: #fff;
+    line-height: .9;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.29);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#home .content p {
+    font-size: 1.8rem;
+    color: var(--color-white);
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+}
+
+#home .content .downloads {
+    display: flex;
+    gap: 1rem;
+}
+
+#home .content .image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 1rem;
+}
+
+#home .content .image .ball {
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    width: 85%;
+    height: 85%;
+    bottom: -.5rem;
+}
+
+#home .content .image img {
+    width: 80%;
+}
+
+@media (min-width: 1080px) {  
+    header#home {
+        height: 90vh;
+        padding-block: initial;
+    }
+ 
+    header#home .content {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    header#home .content .text {
+        margin-top: initial;
+    }
+
+    header#home .content .text img.logo {
+        width: 25rem;
+    }
+
+    header#home .content .text h1 {
+        font-size: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    header#home .content .text p {
+        font-size: 2.4rem;
+        margin-bottom: 4rem;
+    }
+
+    header#home .content .text .downloads img {
+        width: 20rem;
+    }
+
+    header#home .content .image {
+        justify-content: center;
+    }
+
+    header#home .content .image .ball {
+        box-shadow: inset 20px 20px 60px #00355d,
+            inset -20px -20px 60px #00477d;
+
+        width: 100%;
+        height: 10%;
+    }
+
+    header#home .content .image img {
+        width: 100%;
+    }
+
+}
+   

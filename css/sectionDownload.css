@@ -1,0 +1,56 @@
+
+#download {
+    background: #C2E8FF;
+}
+
+#download h2 {
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+}
+
+#download .cards {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#download .cards .card {
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    width: 70%;
+}
+
+#download .cards img {
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+
+    section#download h2 {
+        font-size: 4rem;
+    }
+
+    section#download .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    section#download .cards {
+        flex-direction: row;
+        margin: initial;
+    }
+
+    section#download .content .cards {
+        justify-content: end;
+    }
+
+    section#download .content .cards .card {
+        width: 40%;
+        padding: 1.1rem;
+    }
+}

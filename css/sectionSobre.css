@@ -1,0 +1,103 @@
+#sobre {
+    background: var(--color-white);
+}
+
+#sobre img.icone3d {
+    display: none;
+}
+
+#sobre h2 {
+    font-size: 3rem;
+    text-align: left;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+}
+
+#sobre .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#sobre .cards .card {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    background: var(--primary-color);
+    text-align: center;
+}
+
+#sobre .cards .card p {
+    font-weight: 500;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+@media (min-width: 1080px) {
+    section#sobre {
+        background: var(--primary-color);
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    section#sobre .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background: var(--color-white);
+        box-shadow:  20px 20px 60px #007cc5,
+        -20px -20px 60px #00a8ff;
+
+        padding: 4rem;
+        padding-inline: 8rem;
+        border-radius: 4rem;
+
+        position: relative;
+    }
+
+    section#sobre img.icone3d {
+        display: inherit;
+        position: absolute;
+        width: 24rem;
+    }
+
+    section#sobre img.icone3d.um {
+        top: 0;
+        left: -12%;
+        z-index: 2;
+    }
+
+    section#sobre img.icone3d.dois {
+        top: 20%;
+        left: -14%;
+        filter: blur(4px);
+        opacity: .7;
+    }
+
+    section#sobre img.icone3d.tres {
+        top: 60%;
+        right: -13%;
+    }
+
+    section#sobre  h2 {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    section#sobre .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        width: 100%;
+    }
+
+    section#sobre .cards .card {
+        padding: 2rem;
+    }
+
+    section#sobre .cards .card p {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,138 @@
+#app {
+    background: var(--color-white);
+    padding-top: 0;
+}
+
+#app .content img.mockup {
+    width: 70%;
+    filter: drop-shadow(10px 10px 30px #00000063);
+}
+
+#app .content img.arrow {
+    display: none;
+}
+
+#app .cards {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+#app .cards .card {
+    background: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 2rem;
+
+    box-shadow:  20px 20px 60px #c8c8c8,
+             -20px -20px 60px #ffffff;
+}
+
+#app .cards .card p {
+    font-size: 1.6rem;
+    color: var(--color-white);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+#app .cards .card p span {
+    font-weight: 600;
+    color: #fff;
+}
+
+@media (min-width: 1080px) {
+    section#app {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+        padding-top: 8rem;
+    }
+
+    section#app::before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 20%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: var(--primary-color);
+        z-index: -1;
+    }
+
+    section#app .content img.mockup {
+        width: 30%;
+    }
+
+    section#app .content {
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.29);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 2rem;
+        border-radius: 4rem;
+
+        position: relative;
+    }
+
+    section#app .cards .card p {
+        font-size: 2rem;
+    }
+
+    section#app .cards .card {
+        position: absolute;
+        width: 40%;
+    }
+
+    section#app .cards .card.um {
+        top: 20%;
+        left: -10%;
+    }
+
+    section#app .cards .card.dois {
+        top: 20%;
+        right: -10%;
+    }
+
+    section#app .cards .card.tres {
+        bottom: 20%;
+        left: -10%;
+    }
+
+    section#app .cards .card.quatro {
+        bottom: 20%;
+        right: -10%;
+    }
+
+    section#app .wrapper .content img.arrow {
+        display: inherit;
+        position: absolute;
+        z-index: 3;
+        width: 15rem;
+    }
+
+    section#app img.arrow.top.left {
+        top: 5%;
+        left: 20%;
+    }
+
+    section#app img.arrow.top.right {
+        top: 9%;
+        right: 20%;
+    }
+
+    section#app img.arrow.bottom.left {
+        bottom: 5%;
+        left: 20%;
+    }
+
+    section#app img.arrow.bottom.right {
+        bottom: 5%;
+        right: 20%;
+    }
+}

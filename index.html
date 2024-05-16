@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedConsulta - Transformando saúde em conexão</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+
+    <nav id="navigation" class="">
+
+        <div class="wrapper">
+
+            <a class="logo" href="#home">
+                <img src="./assets/logo medconsulta small branco.svg" alt="">
+            </a>
+            
+            <div class="menu">
+                <ul>
+                    <li><a onclick="closeMenu()" href="#home">Home</a></li>
+                    <li><a onclick="closeMenu()" href="#sobre">Sobre</a></li>
+                    <li><a onclick="closeMenu()" href="#services">Blog</a></li>
+                </ul>
+
+                <a href="#home"><img class="logo" onclick="closeMenu()" src="./assets/logo med escrita branco.svg" alt=""></a>
+             </div>
+
+            <button 
+            aria-expanded="false"
+            aria-label="Abrir menu"
+            onclick="openMenu()" 
+            class="open-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </button>
+            <button
+            aria-expanded="true"
+            aria-label="Fechar menu"
+            onclick="closeMenu()" 
+            class="close-menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+            </button>
+        </div>
+           
+    </nav>
+
+    <header id="home">
+        <div class="wrapper">
+            <div class="content">
+                <div class="text">
+                    <img class="logo" src="./assets/logo med escrita branco.svg" alt="">
+                    <h1>Transformando saúde em conexão</h1>
+
+                    <p>Acesso fácil e rápido a cuidados médicos,
+                    diretamente do seu celular.</p>
+
+                    <div class="downloads">
+                        <a href="#"><img src="./assets/download app store.svg" alt=""></a>
+                        <a href="#"><img src="./assets/download google play.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="./assets/celular medconsulta app.png" alt="">
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </div>
+
+        <img class="eclipse" src="./assets/ELIPSE.svg" alt="">
+    </header>
+
+    <section id="sobre">
+            <div class="wrapper">
+                <h2>Conheça um pouco mais o
+                    MedConsulta</h2>
+                <div class="cards">
+                    <div class="card">
+                        <p>Atendimento integrado</p>
+                    </div>
+
+                    <div class="card">
+                        <p>Redução de custos</p>
+                    </div>
+
+                    <div class="card">
+                        <p>Diversas especialidades</p>
+                    </div>
+
+                    <div class="card">
+                        <p>Acessibilidade e Conveniência</p>
+                    </div>
+                </div>
+
+                <img class="icone3d um" src="./assets/coracaomed 3d icone.svg" alt="">
+                <img class="icone3d dois" src="./assets/coracaomed 3d icone.svg" alt="">
+                <img class="icone3d tres" src="./assets/coracaomed 3d icone.svg" alt="">
+            </div>
+    </section>
+
+    <section id="app">
+        <div class="wrapper">
+            <div class="content">
+                <img class="mockup" src="./assets/[Mockup] iPhone 14.png" alt="">
+
+                <div class="cards">
+                    <div class="card um">
+                        <p>O MedConsulta <span>facilita o acesso à saúde</span> para pessoas que tem dificuldades de deslocamento ou vivem em áreas com poucos recursos médicos.</p>
+                    </div>
+
+                    <div class="card dois">
+                        <p>Oferecemos uma gama diversificada de especialidades médicas, <span>atendendo a uma variedade de necessidades de saúde</span>, isso inclui desde consultas de rotina até especialidades mais específicas.</p>
+                    </div>
+
+                    <div class="card tres">
+                        <p>O uso do MedConsulta é menos custosa do que visitas presenciais, especialmente para consultas de rotinas ou acompanhamento. Além disso, o MedConsulta <span>oferece opções de pagamento flexíveis, como pagamento por consulta</span>, tornando o acesso à saúde viável para toda população.</p>
+                    </div>
+
+                    <div class="card quatro">
+                        <p>O MedConsulta proporciona uma <span>experência de cuidado integral, incluindo saúde física, mental e preventiva</span>. Com foco não apenas no tratamento, mas também na prevenção de doenças.</p>
+                    </div>
+                </div>
+
+                <img class="arrow top left" src="./assets/arrow top left.svg" alt="">
+                <img class="arrow top right" src="./assets/arrow top right.svg" alt="">
+                <img class="arrow bottom left" src="./assets/arrow bottom left.svg" alt="">
+                <img class="arrow bottom right" src="./assets/arrow bottom right.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="download">
+        <div class="wrapper">
+            <div class="content">
+                <header>
+                    <h2>Baixe o app e comece a cuidar de você hoje mesmo!</h2>
+                </header>
+    
+                <div class="cards">
+                   <div class="card">
+                        <img src="./assets/download app store.svg" alt="">
+                   </div>
+    
+                    <div class="card">
+                        <img src="./assets/download google play.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios">
+        <div class="custom-shape-divider-top-1715887445">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
+        
+       <div class="wrapper">
+            <header>
+                <h2><span>MedConsulta</span> <br> Saúde para todos.</h2>
+            </header>
+
+            <div class="content">
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/icones/porquinho.svg" alt="">
+                        <p>Consultas por apenas R$49,90</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/icones/temporizador.svg" alt="">
+                        <p>Economia de tempo e transporte</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/icones/homem no sofa.svg" alt="">
+                        <p>Atendimentos do conforto da sua casa</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/icones/remedios.svg" alt="">
+                        <p>Prescrições e Renovação de Medicamentos</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./assets/icones/mao coracao.svg" alt="">
+                        <p>Acompanhamento regular de doenças crônicas</p>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img src="./assets/doutor atendendo crianca atraves do celular.png" alt="">
+                </div>
+            </div>
+       </div> 
+    </section>
+
+    <a id="buttonWhatsapp" class="show" target="_blank" href="">
+
+        <img src="./assets/whatsapp logo.webp" alt="">
+
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+</html> 
