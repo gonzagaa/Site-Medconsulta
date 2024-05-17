@@ -83,6 +83,11 @@ nav path {
 .logo img {
   width: 5rem;
   margin-left: -1rem;
+  filter: brightness(0) invert(100%);
+}
+
+nav#navigation.scroll .logo img {
+  filter: initial;
 }
 
 nav button {
@@ -195,34 +200,22 @@ body.menu-expanded .menu {
   opacity: 1;
 }
 
+.menu ul li a.button button {
+  padding: 1rem; 
+  border-radius: 1rem;
+  border: none;
+  background: var(--secondary-color);
+  font-size: 1.2rem;
+  color: var(--color-white);
+}
+
+.menu ul li a.button::before {
+  display: none;
+}
+
 body.menu-expanded .menu img.logo {
   width: 15rem;
   opacity: .5;
-
-}
-
-.menu .button {
-  background-color: var(--secondary-color);
-  border-radius: 4rem;
-
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-
-  margin-top: 4.8rem;
-  margin-bottom: 8rem;
-
-  transition: all 200ms ease-in-out;
-}
-
-.menu button {
-  font-size: 1.8rem;
-  line-height: 2.3rem;
-
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  color: #000000;
 }
 
 body.menu-expanded .logo,
@@ -263,10 +256,6 @@ body.menu-expanded nav#navigation.scroll path {
     nav#navigation .social-links {
       display: none;
     }
-
-    nav#navigation {
-      border-bottom: 1px solid var(--primary-color);
-    }
   
     nav#navigation .menu {
       display: flex;
@@ -277,10 +266,42 @@ body.menu-expanded nav#navigation.scroll path {
     nav#navigation .menu ul:nth-child(1) {
       display: flex;
       gap: 3.2rem;
+      align-items: center;
     } 
+
+    nav#navigation .menu ul li a.button::after {
+      display: none;
+    }
+
+    nav#navigation .menu ul li a.button button {
+      padding: 1rem;
+      color: var(--color-white);
+    }
+
+    nav#navigation .menu ul li a.button.um button {
+      background: transparent;
+      outline: 2px solid var(--color-white);
+    }
+
+    nav#navigation .menu ul li a.button.dois button {
+      background: var(--color-white);
+      color: var(--secondary-color);
+      outline: 2px solid var(--color-white);
+    }
+
+    nav#navigation.scroll .menu ul li a.button.um button {
+      outline: 2px solid var(--secondary-color);
+      color: var(--secondary-color);
+    }
+
+    nav#navigation.scroll .menu ul li a.button.dois button {
+      background: var(--secondary-color);
+      color: var(--color-white);
+      outline: 2px solid var(--secondary-color);
+    }
   
     nav#navigation .menu ul li a {
-      color: var(--color-black);
+      color: var(--color-white);
       font-weight: 500;
       opacity: .9;
     }
@@ -294,7 +315,7 @@ body.menu-expanded nav#navigation.scroll path {
     }
 
     nav#navigation.scroll .menu ul li a {
-      color: var(--color-white);
+      color: var(--secondary-color);
       opacity: .7;
     }
 
@@ -306,7 +327,7 @@ body.menu-expanded nav#navigation.scroll path {
       content: '';
       width: 0%;
       height: 3px;
-      background-color: var(--primary-color);
+      background-color: var(--color-white);
   
       position: relative;
       bottom: -2rem;
@@ -317,7 +338,7 @@ body.menu-expanded nav#navigation.scroll path {
     }
 
     nav#navigation.scroll .menu li a::after {
-      background-color: var(--color-white);
+      background-color: var(--secondary-color);
     }
   
     nav#navigation .menu li a:hover::after {

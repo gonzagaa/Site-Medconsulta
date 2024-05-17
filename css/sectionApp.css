@@ -6,6 +6,22 @@
 #app .content img.mockup {
     width: 70%;
     filter: drop-shadow(10px 10px 30px #00000063);
+
+}
+
+#app .content .image  {
+    position: relative;
+}
+
+#app .content .image::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 40px;
+    background: var(--secondary-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #app .content img.arrow {
@@ -25,9 +41,6 @@
     background: var(--secondary-color);
     padding: 2rem;
     border-radius: 2rem;
-
-    box-shadow:  20px 20px 60px #c8c8c8,
-             -20px -20px 60px #ffffff;
 }
 
 #app .cards .card p {
@@ -66,6 +79,10 @@
         width: 30%;
     }
 
+    section#app .content .image::before {
+        display: none;
+    }
+
     section#app .content {
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.29);
@@ -80,13 +97,16 @@
         position: relative;
     }
 
-    section#app .cards .card p {
-        font-size: 2rem;
-    }
-
     section#app .cards .card {
+        box-shadow:  20px 20px 60px #c8c8c8,
+             -20px -20px 60px #ffffff;
+
         position: absolute;
         width: 40%;
+    }
+
+    section#app .cards .card p {
+        font-size: 2rem;
     }
 
     section#app .cards .card.um {

@@ -81,7 +81,7 @@
         right: -13%;
     }
 
-    section#sobre  h2 {
+    section#sobre h2 {
         font-size: 4rem;
         margin-bottom: 5rem;
     }
@@ -89,7 +89,7 @@
     section#sobre .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
+        gap: 2rem;
         width: 100%;
     }
 
@@ -98,6 +98,6 @@
     }
 
     section#sobre .cards .card p {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
