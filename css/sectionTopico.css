@@ -1,0 +1,91 @@
+#topico {
+    background: var(--gradient-white);
+    padding-block: 0;
+    padding-top: 8rem;
+    padding-bottom: 0;
+}
+
+#topico .content .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#topico h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    background: #cbe7f7;
+    width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+
+    position: relative;
+}
+
+#topico h3 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+#topico h3 span {
+    color: var(--primary-color);
+}
+
+#topico p {
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+
+    position: relative;
+    line-height: 1.4;
+}
+
+#topico p span {
+    font-weight: 600;
+}
+
+#topico img.principal {
+    width: 100%;
+}
+
+@media (min-width: 1080px) {
+    section#topico .content {
+        display: grid ;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#topico .content .text {
+        margin-top: -7rem;
+        margin-left: 7rem;
+        align-items: end;
+    }
+
+    section#topico .content h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+
+    section#topico .content h3 {
+        font-size: 4.5rem;
+        text-align: end;
+        margin-bottom: 2rem;
+    }
+
+    section#topico .content p {
+        font-size: 2rem;
+        text-align: end;
+    }
+
+    section#topico .content .image {
+        display: flex;
+    }
+
+    section#topico .content img.principal {
+        width: 80%;
+    }
+}

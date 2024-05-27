@@ -378,10 +378,6 @@ body.menu-expanded nav#navigation.scroll path {
     nav#navigation .menu img.logo {
       display: none;
     }
-
-    .wrapper {
-      width: min(133rem, 100%);
-    }
   } 
 
 /* ANIMATIONS =================== */

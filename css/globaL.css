@@ -13,7 +13,11 @@
     --primary-color: #0092E8;
     --secondary-color: #003E6D;
 
-    --gradient: linear-gradient(to bottom, #0092e8, #0166a1);
+    --gradient: linear-gradient(to bottom, #0285d1, #0193e8);
+    --gradient-white: linear-gradient(to bottom, #ffffff, #cfedfe);
+    --gradient2: linear-gradient(to bottom, #0a83c8, #089df3);
+
+
 
     --color-black: #00101b;
     --color-white: #E5F4FC;
@@ -63,19 +67,19 @@ section {
   /*====  MEDIAS RESPONSIVES ============================ */
   @media (min-width: 1080px) {
     .wrapper {
-      width: min(112rem, 100%);
+      width: min(103rem, 100%);
     }
   }
 
   @media (min-width: 1200px) {
     .wrapper {
-      width: min(130rem, 100%);
+      width: min(120rem, 100%);
     }
   }
 
   @media (min-width: 1400px) {
     .wrapper {
-      width: min(150rem, 100%);
+      width: min(130rem, 100%);
     }
 
     :root {
@@ -85,13 +89,13 @@ section {
 
   @media (min-width: 1700px) {
     .wrapper {
-      width: min(160rem, 100%);
+      width: min(120rem, 100%);
     }
   }
 
   @media (min-width: 2000px) {
     .wrapper {
-      width: min(180rem, 100%);
+      width: min(150rem, 100%);
     }
   }
 

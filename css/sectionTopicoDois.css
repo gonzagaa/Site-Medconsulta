@@ -1,0 +1,34 @@
+
+@media (min-width: 1080px) {
+    section#topico.dois .content {
+        grid-template-areas: "A B";
+        margin-left: 0;
+        margin-right: -28rem;
+    }
+
+    section#topico.dois .content .text {
+        align-items: start;
+        margin-left: -25rem;
+    }
+
+    section#topico.dois .content .text p {
+        text-align: left;
+        width: 60%;
+    }
+
+    section#topico.dois .content h3 {
+        font-size: 4.5rem;
+        text-align: start;
+        width: 70%;
+    }
+
+    section#topico.dois .content .image {
+        display: flex;
+        justify-content: start;
+        grid-area: A;
+    }
+
+    section#topico.dois .content img.principal {
+        width: 65%;
+    }
+}

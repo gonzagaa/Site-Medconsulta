@@ -1,10 +1,13 @@
 @import './globaL.css';
 @import './navigation.css';
 @import './home.css';
-@import './sectionSobre.css';
+@import './sectionTopico.css';
+@import './sectionTopicoDois.css';
+
 @import './sectionApp.css';
 @import './sectionDownload.css';
 @import './sectionBeneficios.css';
+@import './sectionSlide.css';
 @import './footer.css';
 
 

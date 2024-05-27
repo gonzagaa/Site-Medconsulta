@@ -3,8 +3,6 @@
 #home {
     overflow: hidden;
     min-height: 100vh;
-
-
     position: relative;
     background: var(--gradient);
 }
@@ -26,14 +24,13 @@
 }
 
 #home .content .text {
-    margin-top: 12rem;
+    margin-top: 10rem;
 }
 
 #home .content h1 {
     font-size: 3.5rem;
     color: #fff;
     line-height: 1;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.29);
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -41,15 +38,85 @@
 #home .content p {
     font-size: 1.8rem;
     color: var(--color-white);
-    font-weight: 400;
+    font-weight: 300;
 
     margin-bottom: 2rem;
 }
 
-#home .content .downloads {
-    display: flex;
-    gap: 1rem;
+#home .content p span {
+    font-weight: 500;
 }
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+  
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  #home .slide {
+    overflow: hidden;
+    padding: 2rem 0;
+    display: flex;
+    white-space: nowrap;
+
+    position: absolute;
+    left: 0;
+    top: 36%;
+  }
+  
+  #home .slide:before,
+  #home .slide:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 25rem;
+    height: 100%;
+    z-index: 2;
+  }
+
+#home .slide:before {
+    left: -10rem;
+    background: linear-gradient(to right, #017fc9, transparent);
+  }
+  
+  #home .slide:after {
+    right: 0;
+    background: linear-gradient(to right, #017fc9, transparent);
+  }
+  
+  #home .slide:hover .slide-text {
+    animation-play-state: paused;
+  }
+  
+  #home .slide-text {
+    animation: slide 40s infinite linear;
+    display: flex;
+  }
+  
+  #home .slide-text p {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    margin: 0 .5rem;
+    background: var(--color-white);
+    color: var(--secondary-color);
+    position: relative;
+  }
+  
+  #home .slide-text p:after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: var(--color-text);
+    top: 40%;
+    right: -2.1rem;
+  }
 
 #home .content .image {
     display: flex;
@@ -60,26 +127,39 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    top: 40%;
+    top: 45%;
     mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
     width: 100%;
 }
 
+#home .image .cards {
+    display: none;
+}
+
+#home .image .iconeApp {
+    display: none;
+}
+
 @media (min-width: 1080px) {  
     header#home {
-        height: 90vh;
+        height: 100vh;
         padding-block: initial;
     }
  
     header#home .content {
-        height: 90vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr 1fr;
         align-items: center;
+        justify-content: center;
     }
 
     header#home .content .text {
         margin-top: initial;
+        text-align: center;
+    }
+    
+    header#home .content .slide {
+        display: none;
     }
 
     header#home .content .text img.logo {
@@ -87,8 +167,8 @@
     }
 
     header#home .content .text h1 {
-        font-size: 7rem;
-        margin-bottom: 2rem;
+        font-size: 6rem;
+        margin-bottom: 1rem;
     }
 
     header#home .content .text p {
@@ -96,17 +176,67 @@
         margin-bottom: 4rem;
     }
 
-    header#home .content .text .downloads img {
-        width: 20rem;
-    }
-
     header#home .content .image {
         justify-content: center;
     }
 
     header#home .content .image img {
-        width: 100%;
+        width: 30%;
+        top: 37%;
     }
 
+    header#home .image .cards {
+        display: inherit;
+    }
+
+    header#home .image .cards p {
+        background: #fff;
+        color: var(--secondary-color);
+        font-weight: 500;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        font-size: 1.8rem;
+    }
+
+    header#home .content .image .iconeApp {
+        display: inherit;
+        position: absolute;
+        width: 7rem;
+        mask-image: none;
+    }
+
+    header#home .image .iconeApp.um {
+        top: 70%;
+        left: 64%;
+    }
+
+    header#home .image .iconeApp.dois {
+        top: 60%;
+        left: 36%;
+    }
+
+    header#home .image .cards .card {
+        position: absolute;
+    }
+
+    header#home .image .cards .card.um {
+        left: 18%;
+        top: 59%;
+    }
+
+    header#home .image .cards .card.dois {
+        left: 19.5%;
+        top: 65%;
+    }
+
+    header#home .image .cards .card.tres {
+        left: 70%;
+        top: 68%;
+    }
+
+    header#home .image .cards .card.quatro {
+        left: 70%;
+        top: 74%;
+    }
 }
    
