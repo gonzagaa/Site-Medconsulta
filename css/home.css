@@ -1,5 +1,4 @@
 
-
 /* HOME =================== */
 #home {
     overflow: hidden;
@@ -7,7 +6,7 @@
 
 
     position: relative;
-    background: var(--primary-color);
+    background: var(--gradient);
 }
 
 #home .content {
@@ -17,9 +16,8 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
-    text-align: left;
 }
 
 #home .content .text img {
@@ -28,13 +26,13 @@
 }
 
 #home .content .text {
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 #home .content h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #fff;
-    line-height: .9;
+    line-height: 1;
     text-shadow: 1px 1px 5px rgba(0,0,0,0.29);
     font-weight: 700;
     margin-bottom: 1rem;
@@ -56,23 +54,15 @@
 #home .content .image {
     display: flex;
     justify-content: center;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 1rem;
-}
-
-#home .content .image .ball {
-    position: absolute;
-    z-index: -1;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-    width: 85%;
-    height: 85%;
-    bottom: -.5rem;
 }
 
 #home .content .image img {
-    width: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 40%;
+    mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
+    width: 100%;
 }
 
 @media (min-width: 1080px) {  
@@ -112,14 +102,6 @@
 
     header#home .content .image {
         justify-content: center;
-    }
-
-    header#home .content .image .ball {
-        box-shadow: inset 20px 20px 60px #00355d,
-            inset -20px -20px 60px #00477d;
-
-        width: 100%;
-        height: 10%;
     }
 
     header#home .content .image img {

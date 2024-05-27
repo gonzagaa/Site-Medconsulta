@@ -57,7 +57,7 @@ nav {
   position: fixed;
   top: 0;
 
-  background: var(--primary-color);
+  background: transparent;
 
   width: 100vw;
 

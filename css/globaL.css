@@ -11,7 +11,9 @@
     --nav-height: 7.2rem;
 
     --primary-color: #0092E8;
-    --secondary-color: #003E6D ;
+    --secondary-color: #003E6D;
+
+    --gradient: linear-gradient(to bottom, #0092e8, #0166a1);
 
     --color-black: #00101b;
     --color-white: #E5F4FC;
