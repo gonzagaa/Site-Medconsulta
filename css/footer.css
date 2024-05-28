@@ -13,6 +13,8 @@
 
 #footer .content img.logo {
     width: 20rem;
+    position: relative;
+    z-index: 0;
 }
 
 #footer .content .nav a {
@@ -48,7 +50,7 @@
     color: var(--secondary-color);
 }
 
-footer .content .download img {
+#footer .content .download img {
     width: 20rem;
 }
 
