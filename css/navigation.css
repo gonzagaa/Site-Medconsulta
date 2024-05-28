@@ -137,7 +137,7 @@ body.menu-expanded .menu {
   top: 0;
   left: 40%;
   
-  background: var(--color-white);
+  background: var(--primary-color);
 
   width: 60vw;
   height: max-content;
@@ -148,7 +148,7 @@ body.menu-expanded .menu {
   align-items: start;
   text-align: left;
 
-  padding: 2cap;
+  padding: 2rem;
   padding-top: var(--nav-height);
 
   transition: transform 300ms;
@@ -172,7 +172,7 @@ body.menu-expanded .menu {
 } 
 
 .menu ul li a {
-  color: var(--color-black);
+  color: var(--color-white);
   text-decoration: none;
   font-weight: 400;
   transition: all 200ms ease-in-out;
@@ -215,7 +215,7 @@ body.menu-expanded .menu {
 
 body.menu-expanded .menu img.logo {
   width: 15rem;
-  opacity: .5;
+  opacity: .8;
 }
 
 body.menu-expanded .logo,
@@ -225,11 +225,11 @@ body.menu-expanded nav button {
 }
 
 body.menu-expanded button path {
-  stroke: var(--primary-color);
+  stroke: var(--color-white);
 }
 
 body.menu-expanded nav#navigation.scroll path {
-  stroke: var(--primary-color);
+  stroke: var(--color-white);
 }
 
 /* RESPONSIVE =================== */
