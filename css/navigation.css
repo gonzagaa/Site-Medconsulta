@@ -215,7 +215,7 @@ body.menu-expanded .menu {
 
 body.menu-expanded .menu img.logo {
   width: 15rem;
-  opacity: .8;
+  opacity: 1;
 }
 
 body.menu-expanded .logo,
