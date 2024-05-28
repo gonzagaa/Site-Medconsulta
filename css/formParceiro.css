@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 4rem;
+    background: var(--color-white);
+    height: 100%;
+}
+
+body#bodyForm {
+    background: var(--color-white);
+}
+
+.wrapper {
+    background: var(--color-white);
+    padding-bottom: 7rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    position: relative;
+    z-index: 5;
+
+}
+
+main .image {
+    display: flex;
+    justify-content: start;
+}
+
+main img.logo {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    color: var(--secondary-color);
+    font-size: 3rem;
+    text-align: left;
+    font-weight: 500;
+
+    margin-bottom: 1rem;
+}
+
+main h2 span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+main p {
+    color: var(--secondary-color);
+    text-align: left;
+    font-weight: 400;
+    opacity: .9;
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+}
+
+main p span {
+    color: var(--primary-color);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 4rem;
+}
+
+.form .box-input {
+    position: relative;
+    width: 100%;
+}
+
+.form label {
+    color: var(--secondary-color);
+    font-weight: 600;
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+
+    background: var(--color-white);
+    padding-inline: 1rem;
+    padding-block: .3rem;
+
+}
+
+.form input {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    width: 100%;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.form input::placeholder {
+    color: var(--secondary-color);
+    opacity: .5;
+}
+
+.form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 1080px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 7rem;
+    }
+
+    body main {
+        width: 50%;
+    }
+
+    body .form label {
+        font-size: 1.6rem;
+        top: -1.2rem;
+    }
+
+    body .form input {
+        font-size: 1.8rem;
+        padding-block: 1.7rem;
+    }
+
+    body .form button {
+        font-size: 2rem;
+        padding: 1.7rem;
+    }
+
+    body main .head {
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        grid-template-areas: "a b";
+        align-items: start;
+        gap: 2rem;
+
+        margin-bottom: 1rem;
+    }
+
+    body main .head h2 {
+        font-size: 4rem;
+    }
+
+    body main .head p {
+        font-size: 1.8rem;
+    }
+
+    body main .head .image {
+        grid-area: b;
+    }
+
+    body main .head .image img {
+        width: 7rem;
+    }
+}
+
+
