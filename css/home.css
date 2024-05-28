@@ -126,7 +126,7 @@
 #home .content .image img {
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 0);
     top: 45%;
     mask-image: linear-gradient(180deg, rgba(0, 0, 0, 1), transparent 100%);
     width: 100%;
@@ -151,6 +151,7 @@
         display: grid;
         align-items: center;
         justify-content: center;
+        overflow: initial;
     }
 
     header#home .content .text {
@@ -178,11 +179,14 @@
 
     header#home .content .image {
         justify-content: center;
+        position: relative;
+        height: 100%;
     }
 
-    header#home .content .image img {
-        width: 30%;
-        top: 37%;
+    header#home .wrapper .content .image img.principal {
+        width: 60%;
+        top: initial;
+        bottom: -45rem;
     }
 
     header#home .image .cards {
@@ -190,33 +194,54 @@
     }
 
     header#home .image .cards p {
-        background: #fff;
-        color: var(--secondary-color);
-        font-weight: 500;
-        padding: 1rem 2rem;
-        border-radius: 1rem;
-        font-size: 1.8rem;
+        background: var(--secondary-color);
+        color: var(--color-white);
+        font-weight: 400;
+        padding: 2rem 3rem;
+        border-radius: 2rem;
+        font-size: 2rem;
     }
 
     header#home .content .image .iconeApp {
         display: inherit;
         position: absolute;
-        width: 7rem;
+        width: 4rem;
         mask-image: none;
     }
 
     header#home .image .iconeApp.um {
-        top: 70%;
-        left: 64%;
+       left: 77%;
+       top: 5%;
     }
 
     header#home .image .iconeApp.dois {
-        top: 60%;
-        left: 36%;
+        left: 23%;
+        top: 23%;
+    }
+
+    header#home .image .cards .box-card {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    header#home .image .cards .box-card.um {
+        top: -10%;
+        left: 85%;
+        width: max-content;
+    }
+
+    header#home .image .cards .box-card.dois {
+        top: 9%;
+        left: -17%;
+        width: max-content;
     }
 
     header#home .image .cards .card {
-        position: absolute;
+        border: 1px solid #4dc6fa;
+        background-color: #0289d7;
+        box-shadow:  12px 12px 23px #007cc5,
+             -12px -12px 23px #00aaffce;
     }
 
     header#home .image .cards .card.um {
