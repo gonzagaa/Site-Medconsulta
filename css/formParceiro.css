@@ -107,17 +107,11 @@ section {
   border-radius: 1rem;
 }
 
- 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     padding-top: 4rem;
     background: var(--color-white);
-    height: 100%;
+    min-height: 100%;
 }
 
 body#bodyForm {
@@ -209,6 +203,13 @@ main p span {
     width: 100%;
     font-weight: 400;
     color: var(--secondary-color);
+}
+
+input[type="date"]::placeholder {
+    text-align: left;
+}
+input[type="date"] {
+    text-align: left; 
 }
 
 .form input::placeholder {
