@@ -187,6 +187,14 @@
         width: 60%;
         top: initial;
         bottom: -45rem;
+
+        animation: moveMockup infinite ease-in-out 5s;
+    }
+
+    @keyframes moveMockup {
+        50% {
+            transform: translate(-50%, -15px);
+        }
     }
 
     header#home .image .cards {

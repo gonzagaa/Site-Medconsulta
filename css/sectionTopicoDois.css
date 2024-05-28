@@ -3,7 +3,7 @@
     section#topico.dois .content {
         grid-template-areas: "A B";
         margin-left: 0;
-        margin-right: -28rem;
+        margin-right: -38rem;
     }
 
     section#topico.dois .content .text {

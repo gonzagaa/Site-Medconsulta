@@ -1,0 +1,65 @@
+#chamada {
+    background: linear-gradient(to bottom, #003e6d, #002c4e);
+    position: relative;
+}
+
+
+
+#chamada .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#chamada img {
+    width: 5rem;
+    margin-bottom: 3rem;
+}
+
+#chamada h2 {
+    font-size: 3rem;
+    color: var(--color-white);
+    font-weight: 500;
+
+    margin-bottom: 3rem;
+}
+
+#chamada h2 span {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#chamada a button {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: var(--color-white);
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    border: none;
+
+    transition: all 200ms ease-in-out;
+}
+
+#chamada a button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+}
+
+@media (min-width: 1080px) {
+    section#chamada img {
+        width: 7rem;
+        margin-bottom: 4rem;
+    }
+
+    section#chamada h2 {
+        font-size: 4.5rem;
+        margin-bottom: 4rem;
+    }
+
+    section#chamada a button {
+        font-size: 2rem;
+    }
+}

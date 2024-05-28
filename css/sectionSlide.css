@@ -57,15 +57,16 @@
     color: var(--color-white);
     opacity: .7;
     position: relative;
+    text-transform: uppercase;
   }
   
   #slide .slide-text p:after {
     content: '';
     position: absolute;
-    width: 3px;
-    height: 3px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
-    background-color: var(--color-text);
+    background-color: var(--primary-color);
     top: 40%;
     right: -2.1rem;
   }

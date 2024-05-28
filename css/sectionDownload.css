@@ -33,15 +33,27 @@
     }
 
     section#download .wrapper {
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         padding: 5rem;
         border-radius: 3rem;
+
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: -60%;
+
+        box-shadow: 10px 10px 30px #0000001b;
     }
 
     section#download h2 {
         font-size: 4rem;
         color: var(--color-white);
+        font-weight: 500;
     }
+
+    section#download h2 span {
+        font-weight: 600;
+    }   
 
     section#download .content {
         display: grid;

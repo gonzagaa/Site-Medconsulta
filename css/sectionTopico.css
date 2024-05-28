@@ -62,6 +62,7 @@
     section#topico .content {
         display: grid ;
         grid-template-columns: 1fr 1fr;
+        margin-left: -5rem;
     }
 
     section#topico .content .text {
