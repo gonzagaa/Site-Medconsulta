@@ -11,16 +11,13 @@
 #download .cards {
     margin-top: 4rem;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #download .cards .card {
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--secondary-color);
     width: 70%;
 }
 
@@ -30,8 +27,20 @@
 
 @media (min-width: 1080px) {
 
+    section#download {
+        background-color: var(--color-white);
+        position: relative;
+    }
+
+    section#download .wrapper {
+        background-color: var(--secondary-color);
+        padding: 5rem;
+        border-radius: 3rem;
+    }
+
     section#download h2 {
         font-size: 4rem;
+        color: var(--color-white);
     }
 
     section#download .content {

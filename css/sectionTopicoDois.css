@@ -31,4 +31,9 @@
     section#topico.dois .content img.principal {
         width: 65%;
     }
+
+    section#topico.dois .content .image ion-icon.um {
+        bottom: 10rem;
+        right: 30rem;
+    }
 }

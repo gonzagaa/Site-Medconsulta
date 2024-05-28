@@ -3,6 +3,7 @@
     padding-block: 0;
     padding-top: 8rem;
     padding-bottom: 0;
+    overflow: hidden;
 }
 
 #topico .content .text {
@@ -53,6 +54,10 @@
     width: 100%;
 }
 
+#topico .image ion-icon {
+    display: none;
+}
+
 @media (min-width: 1080px) {
     section#topico .content {
         display: grid ;
@@ -83,9 +88,45 @@
 
     section#topico .content .image {
         display: flex;
+        position: relative;
     }
 
     section#topico .content img.principal {
         width: 80%;
+    }
+
+    section#topico .content .image ion-icon {
+        display: inherit;
+        font-size: 4rem;
+        color: #fff;
+        background-color: var(--primary-color);
+        padding: 1.5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        position: absolute;
+
+        box-shadow:  5px 5px 11px #58585829,
+             -5px -5px 11px #5e5e5e2a;
+
+        border: 3px solid #99cefd67;
+
+        animation: icon infinite ease-in-out 3s;
+    }
+
+    section#topico .content .image ion-icon.um {
+        bottom: 10rem;
+        right: 17rem;
+    }
+    
+    section#topico .content .image ion-icon:last-child {
+        top: 2rem;
+        left: 5rem;
+    }
+    
+}
+
+@keyframes icon {
+    50% {
+        transform: translateY(5px);
     }
 }

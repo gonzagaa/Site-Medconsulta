@@ -238,10 +238,11 @@
     }
 
     header#home .image .cards .card {
-        border: 1px solid #4dc6fa;
-        background-color: #0289d7;
+        border: 1px solid #7ad7ff;
+        background-color: #c6eaff;
         box-shadow:  12px 12px 23px #007dc5f1,
              -12px -12px 23px #00aaffce;
+        color: var(--secondary-color);
     }
 
     header#home .image .cards .card.um {
