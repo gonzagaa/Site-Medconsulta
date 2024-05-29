@@ -247,7 +247,7 @@
 
     header#home .image .cards .card {
         border: 1px solid #7ad7ff;
-        background-color: #c6eaff;
+        background-color: #def3ff;
         box-shadow:  12px 12px 23px #007dc5f1,
              -12px -12px 23px #00aaffce;
         color: var(--secondary-color);
