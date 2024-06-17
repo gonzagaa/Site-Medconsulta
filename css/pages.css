@@ -1,0 +1,28 @@
+body#pages {
+    background-color: aliceblue;
+}
+
+nav#navigation {
+    background: var(--primary-color);
+}
+
+.box {
+    margin-top: 10rem;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.box h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.box p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 300;
+}
