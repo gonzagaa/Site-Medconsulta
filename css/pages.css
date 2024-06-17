@@ -8,6 +8,8 @@ nav#navigation {
 
 .box {
     margin-top: 10rem;
+    margin-bottom: 3rem;
+
     width: 100%;
     background-color: var(--primary-color);
     border-radius: 1rem;
@@ -25,4 +27,71 @@ nav#navigation {
     font-size: 1.6rem;
     color: #fff;
     font-weight: 300;
+}
+
+.content p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    font-weight: 400;
+
+    text-align: left;
+}
+
+.content p span {
+    font-weight: 600;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+
+    text-align: left;
+    margin-bottom: 4rem;
+}
+
+details {
+    user-select: none;
+    -webkit-user-select: none; /* Para compatibilidade com navegadores baseados em WebKit */
+    -moz-user-select: none; /* Para compatibilidade com navegadores baseados em Mozilla */
+    -ms-user-select: none; /* Para compatibilidade com navegadores baseados em Microsoft */
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: left;
+    align-items: start;
+    justify-content: center;
+
+    padding-bottom: 5rem;
+}
+
+.details summary {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+
+    transition: all 200ms ease-in-out;
+}
+
+.details summary:hover {
+    color: #005698;
+    cursor: pointer;
+}
+
+.details p {
+    margin-top: 1rem;
+    padding: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    font-weight: 400;
+
+    text-align: left;
+
+    background-color: rgb(216, 224, 232);
+    border-radius: 1rem;
 }
