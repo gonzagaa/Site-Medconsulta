@@ -65,6 +65,34 @@
             <h1>CONTATO</h1>
             <p>MedConsulta</p>
         </div>
+
+        <div class="content">
+            <h2>Entre em contato conosco!</h2>
+
+            <form action="https://formsubmit.co/mateusaqb@medconsulta.app" 
+            method="POST">
+                <input type="hidden" name="_next" value="https://medconsulta.app"/>
+                <input type="hidden" name="_autoresponse" value="Obrigado! Recebemos sua mensagem."/>
+
+                <label for="name">Nome</label>
+                <input name="name" type="text" required class="feedback-input"/>   
+
+                <label for="email">Email</label>
+                <input name="email" type="email" required class="feedback-input"/>
+
+                <label for="textarea">Sua mensagem</label>
+                <textarea name="text" class="feedback-input"></textarea>
+
+                <div class="input">
+                    <p>This site is protected by reCAPTCHA and <br>the Google <span>Privacy Policy</span> and
+                    <span>Terms of Service</span> apply.</p>
+                    
+                    <button type="submit">Enviar</button>
+                </div>
+                
+              </form>
+
+        </div>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

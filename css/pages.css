@@ -29,6 +29,19 @@ nav#navigation {
     font-weight: 300;
 }
 
+.content {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+
 .content p {
     font-size: 1.8rem;
     line-height: 1.6;
@@ -48,7 +61,30 @@ nav#navigation {
     font-weight: 700;
 
     text-align: left;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+}
+
+embed {
+    width: 100%;
+    height: 100%;
+}
+
+a.download button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+a.download button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
 }
 
 details {
@@ -74,6 +110,10 @@ details {
     color: var(--secondary-color);
     font-weight: 600;
 
+    background-color: #d9edfd;
+    padding: 1rem;
+    border-radius: 1rem;
+
     transition: all 200ms ease-in-out;
 }
 
@@ -94,4 +134,55 @@ details {
 
     background-color: rgb(216, 224, 232);
     border-radius: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+form label {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #005698;
+}
+
+form input,
+form textarea {
+    padding: 1rem;
+    font-size: 1.6rem;
+    background-color: #d9edfd;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+form .input {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+form .input p {
+    font-size: 1.2rem;
+}
+
+
+form .input button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+form .input button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
 }
